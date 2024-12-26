@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自訂樣式 -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- 頂部導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Heri4SZN Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#more-info">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#myart">作品展示</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="parallax">
+        <h2 id="text">Heri4SZN 3D</h2>
+        <img src="assets/images/monutain_01.png" id="m1">
+        <img src="assets/images/trees_02.png" id="t2">
+        <img src="assets/images/monutain_02.png" id="m2">
+        <img src="assets/images/trees_01.png" id="t1">
+        <img src="assets/images/man.png" id="man">
+        <img src="assets/images/plants.png" id="plants">
+    </section>
+
+    <script>
+        gsap.from("#m1", {
+        y: 500, // 初始位置
+        scrollTrigger: {
+            trigger: "#m1", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+
+    gsap.from("#m2", {
+        y: 500, // 初始位置
+        scrollTrigger: {
+            trigger: "#m2", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#t2", {
+        x: -500, // 初始位置
+        scrollTrigger: {
+            trigger: "#t2", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#t1", {
+        x: -800, // 初始位置
+        scrollTrigger: {
+            trigger: "#t1", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#man", {
+        x: -700, // 初始位置
+        scrollTrigger: {
+            trigger: "#man", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#plants", {
+        x: -700, // 初始位置
+        scrollTrigger: {
+            trigger: "#plants", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#text", {
+        x: 3500, // 初始位置
+        scrollTrigger: {
+            trigger: "#text", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    </script>
+
+
+    <div class="video-container">
+        <div class="container">
+            <video autoplay muted loop>
+            <source src="assets/images/finalcave - Converted with FlexClip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>   
+    </div>
+    
+
+    <!-- 輪播區域 -->
+    <header>
+        <div id="mainCarousel" class="carousel slide vh-100" data-bs-ride="carousel" data-bs-interval="3000">
+            <!-- 輪播的圖片 -->
+            <div class="carousel-inner h-100">
+                <!-- 第一張圖片 -->
+                <div class="carousel-item active h-100">
+                    <img src="assets/images/場景渲染_001 ps.png" class="d-block w-100 h-100 object-fit-cover" alt="作品 1">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">NEW NEON TOKYO</h1>
+                        <p class="lead text-light">JR鶯谷駅</p>
+                    </div>
+                </div>
+                <!-- 第二張圖片 -->
+                <div class="carousel-item h-100">
+                    <img src="assets/images/crazyhouse ps.jpg" class="d-block w-100 h-100 object-fit-cover" alt="作品 2">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">WAR</h1>
+                        <p class="lead text-light"></p>
+                    </div>
+                </div>
+                <!-- 第三張圖片 -->
+                <div class="carousel-item h-100">
+                    <img src="assets/images/final_001.jpg" class="d-block w-100 h-100 object-fit-cover" alt="作品 3">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">KRISS VECTOR</h1>
+                        <p class="lead text-light">Blender&Substance painter</p>
+                    </div>
+                </div>
+                <!-- 第四張圖片 -->
+                <div class="carousel-item h-100">
+                    <img src="assets/images/NewLevelSequence.0080.png" class="d-block w-100 h-100 object-fit-cover" alt="作品 3">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">CAVE</h1>
+                        <p class="lead text-light">Unreal Engine 5 animation</p>
+                    </div>
+                </div>
+                <!-- 第五張圖片 -->
+                <div class="carousel-item h-100">
+                    <img src="assets/images/ak4701.png" class="d-block w-100 h-100 object-fit-cover" alt="作品 3">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">AK47</h1>
+                        <p class="lead text-light">Blender&Substance painter</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 輪播的控制按鈕 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">上一張</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">下一張</span>
+            </button>
+        </div>
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Scrolling with Text</title>
+  <style>
+    /* 通用樣式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* 滾動視差圖片區 */
+    .parallax-section {
+      position: relative;
+      height: 100vh; /* 全螢幕高度 */
+      background: url('assets/images/第22組 Broqué.jpg') no-repeat center center/cover;
+      background-attachment: fixed; /* 使背景圖片固定滾動 */
+    }
+
+    /* 視差文字區域 */
+    .parallax-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    .parallax-content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .parallax-content p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .parallax-content a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: #3b83f7; /* 按鈕顏色 */
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+
+    .parallax-content a:hover {
+      background: #00CED1; /* 懸停效果顏色 */
+    }
+
+    /* 普通內容區 */
+    .normal-section {
+      padding: 80px 20px;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .normal-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .normal-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 第一區段 (視差效果) -->
+  <section class="parallax-section">
+    <div class="parallax-content">
+      <h1>HERI4SZN</h1>
+      <p>INS:heri4szn</p>
+      <a href="#more-info">關於我</a>
+    </div>
+  </section>
+
+  <!-- 普通內容區 -->
+  <section class="normal-section" id="more-info">
+    <h2>關於我</h2>
+    <p>這是我的個人作品集網站， 主要放3D相關的作品</p>
+    <p>軟體技能:Blender、SP、Unreal engine5、MD、Zbrush</p>
+  </section>
+
+ <!-- 第二區段 (視差效果) -->
+ <section class="parallax-section" id="myart">
+    <div class="parallax-content">
+      <h1>Broqué時裝周</h1>
+      <p></p>
+      <a href="work-introduction.html" class="btn" target="_blank">查看更多作品</a>
+    </div>
+  </section>
+</body>
+</html>
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- 第一頁 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-3">
+                                <img src="assets/images/upgrade_001.png" class="img-fluid rounded" alt="作品1">
+                                <p class="text-light mt-2">UPGRADE LOGO</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/upgrade_0001.png" class="img-fluid rounded" alt="作品2">
+                                <p class="text-light mt-2">UPGRADE STORE</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/upgrade_0002.png" class="img-fluid rounded" alt="作品3">
+                                <p class="text-light mt-2">UPGRADE STORE</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/upgrade_0003.png" class="img-fluid rounded" alt="作品4">
+                                <p class="text-light mt-2">UPGRADE STORE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 第二頁 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-3">
+                                <img src="assets/images/IMG_2977.JPG" class="img-fluid rounded" alt="作品5">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/IMG_2976.JPG" class="img-fluid rounded" alt="作品6">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/IMG_2978.JPG" class="img-fluid rounded" alt="作品7">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第三頁 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-3">
+                                <img src="assets/images/場景渲染_001 ps.png" class="img-fluid rounded" alt="作品8">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/渲染003 ps.png" class="img-fluid rounded" alt="作品9">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/場景白模.png "class="img-fluid rounded" alt="作品10">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/場景線圖.png"class="img-fluid rounded" alt="作品11">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                
+            </div>
+    </section>
+             <!-- 聯絡我 -->
+    <footer id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>聯絡我</h2>
+            <p>透過以下方式聯繫我：</p>
+            <a href="mailto:harry930427@gmail.com" class="btn btn-primary">電子郵件</a>                 
+            <div class="mt-3">
+                <a href="https://www.instagram.com/heri4szn/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+        
+            <!-- 輪播控制按鈕 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="col-sm-6 col-md-3">...</div>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            
+    </header>
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

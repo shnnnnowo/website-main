@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品介紹</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+  <!-- 引入 Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEJ6K6vH9iXupR5oc6rAg9kI+qpnIAViTXG9mUrf20FZJo6GdHrxIT96YarJ6" crossorigin="anonymous">
+  <!-- 引入自訂 CSS -->
+  <link rel="stylesheet" href="work-introduction.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="bs5vue.js"></script>
+</head>
+
+<body>
+
+
+  <!-- 視差滾動背景區 -->
+  <section class="parallax" id="intro">
+    <div class="container text-center text-light py-5">
+      <h1>歡迎來到我的作品展示間</h1>
+      <p>探索我的3D世界，體驗動畫與互動效果。</p>
+    </div>
+  </section>
+
+  <!-- 作品展示區 -->
+  <div id="card">
+   
+      <div class="container ">
+        <h2>作品展示區</h2>>
+        <div class="row row-cols-md-4">
+          
+            <div class="col" v-for="card in cards" :key="card.title">
+              <div class="card shadow-sm ">
+                <img :src="card.imgSrc" alt="Card image" class="card-img-top">
+                <div class="card-body ">
+                  <h5 class="card-title">{{card.title}}</h5>
+                  <p class="card-text " >{{card.text}}</p>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+        <!-- 可以重複增加更多作品 -->
+      </div>
+    
+  </div>
+
+  <!-- 聯絡我 -->
+  <section id="contact" class="bg-dark text-light py-5">
+    <div class="container text-center">
+      <h3>聯絡我</h3>
+      <p>如果你對我的作品感興趣，隨時聯繫我！</p>
+      <a href="mailto:your_email@example.com" class="btn btn-primary">發送電子郵件</a>
+    </div>
+  </section>
+
+  <!-- 引入 Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka1g/jhh8w1f4c5txVs5sLhOECFhPq3BzsfCxVJlSAWI3z80t7tnDWdsk3/Kb7v9"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="bs5vue.js"></script>
+</body>
+
+</html>
